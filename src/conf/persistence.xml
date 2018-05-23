@@ -5,24 +5,24 @@
     <class>com.bumblebee.model.Articlecolors</class>
     <class>com.bumblebee.model.Articledescriptions</class>
     <class>com.bumblebee.model.Articlematerials</class>
-    <class>com.bumblebee.model.Articles</class>
     <class>com.bumblebee.model.Articlesizes</class>
-    <class>com.bumblebee.model.Bankaccounts</class>
     <class>com.bumblebee.model.Care</class>
     <class>com.bumblebee.model.Colors</class>
     <class>com.bumblebee.model.Coupons</class>
-    <class>com.bumblebee.model.Creditcards</class>
-    <class>com.bumblebee.model.Customers</class>
     <class>com.bumblebee.model.Deliveryadresses</class>
     <class>com.bumblebee.model.Descriptions</class>
     <class>com.bumblebee.model.Materials</class>
     <class>com.bumblebee.model.Orderitems</class>
     <class>com.bumblebee.model.Orders</class>
     <class>com.bumblebee.model.Primecategories</class>
-    <class>com.bumblebee.model.Shoppingcarts</class>
     <class>com.bumblebee.model.Shoppingitems</class>
     <class>com.bumblebee.model.Subcategories</class>
-    <class>com.bumblebee.model.Units</class>
+    <class>com.bumblebee.model.Customer</class>
+    <class>com.bumblebee.model.Article</class>
+    <class>com.bumblebee.model.Bankaccount</class>
+    <class>com.bumblebee.model.Creditcard</class>
+    <class>com.bumblebee.model.Shoppingcart</class>
+    <class>com.bumblebee.model.Unit</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
