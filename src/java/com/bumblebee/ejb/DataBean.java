@@ -6,8 +6,10 @@
 package com.bumblebee.ejb;
 
 import com.bumblebee.ctrl.DataBeanRemote;
+import com.bumblebee.model.Article;
 import com.bumblebee.model.Customer;
 import java.io.Serializable;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -32,7 +34,23 @@ public class DataBean implements DataBeanRemote, Serializable {
         q.setParameter("email", email);
         return (Customer) q.getSingleResult();
     }
+
+    @Override
+    public List<Article> getAllArticles() {
+        Query q = em.createNamedQuery("Article.findAll", Article.class);
+        return q.getResultList();
+    }
     
+    
+    @Override
+    public void saveRegister(Customer customer) {
+        if (customer.getCustid() != 0) {
+
+        } else {
+            em.persist(customer);
+        }
+    }
+
     
 
    
